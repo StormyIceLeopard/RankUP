@@ -1,0 +1,43 @@
+0.02
+Added GUI
+Added working color tags to lore and name
+Added {cost} to the lore
+
+0.03
+Added Command list execution functionality
+
+0.04
+Recreated the ShopGUI class RankUPShop
+
+0.05
+Added reload command
+Added transaction handler
+
+0.06
+Added Remove points
+
+0.07
+Fixed some SQL attempts
+Cleaned up code
+Add points to player every x seconds to current points in database
+
+0.08
+Added -1 cost to be no cost. A.K.A. Information slot
+
+0.09
+Added the commands Add, Check, Remove
+
+0.10
+More efficient Async instead of sync
+
+0.11
+Async depreciated, switched back to sync.
+
+0.12
+Added console command access for adding points from voting
+
+0.13
+Added first join message and points.
+
+0.14
+Added options for SSL.

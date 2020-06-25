@@ -1,0 +1,96 @@
+# MySQL Database Information
+
+# MySQL Address
+# A.K.A MySQL Host URL/Address
+MySQL: change me
+
+# MySQL Port
+# Default: 3306
+Port: 3306
+
+# MySQL Database Name
+DataBaseName: change me
+
+# MySQL Database Username
+Username: change me
+
+# MySQL Database Password
+Password: change me
+
+# SSL Information? default: false
+useSSL: false
+verifyServerCertificate: false
+
+# -----------------------------------
+# Point Management
+
+# Time (in seconds) to be online inorder to get points added to IGN
+# Default: 900 (which is 15 minutes in seconds)
+timeonline: 900
+
+# Points to be given when player is online for timeonline
+# Default: 5
+points: 5
+
+# -----------------------------------
+# Shop GUI setup
+
+# Shop size MUST be multiples of 9
+ShopSize: 9
+
+# Name your shop GUI
+ShopName: RankUP
+
+# Your shop products
+Products:
+
+  0: # Index Position - Slot 1 in the inventory
+    ItemAmount: 1 # Set the number of items to show in the GUI
+    Name: "Iron &d&lRank" # Name of Product/Item
+    Item: IRON_INGOT # Item used in GUI
+    Cost: 743 # Cost of said item points *RECOMMEND WHOLE NUMBERS*
+    lore: # Text that the player sees when mouse is over item.
+      - "&fThe Iron Rank is the lowest Rank."
+      - "It's also the cheapest rank at"
+      - "a price of: &2{cost} &a&lPoints"
+    Commands: # Commands to execute on purchase
+      - give {player} diamond 3 #- pex user {player} group set iron
+  
+  4: # Index Position - Slot 5 in the inventory
+    ItemAmount: 1 # Set the number of items to show in the GUI
+    Name: "&bDiamond &d&lRank" # Name of Product/Item
+    Item: DIAMOND # Item used in GUI
+    Cost: 11294 # Cost of said item points *RECOMMEND WHOLE NUMBERS*
+    lore: # Text that the player sees when mouse is over item.
+      - "&fThe &bDiamond &fRank is the Best Rank for the price."
+      - "It's a little on the expensive side at"
+      - "a price of: &2{cost} &a&lPoints"
+    Commands: # Commands to execute on purchase
+      - give {player} glass 4 #- pex user {player} group set iron
+      - give {player} emerald 1
+      
+  # Player is where the player gets their current points {playerpoints} and anything else you wish to put here
+  8: # Index Position - Slot 49 is row 6 slot 5
+  
+    # true to enable this. 
+    # false to disable this.
+    enabled: true
+  
+    # You can use head:auto to get the head of the player opening the menu, or head:SomethingElse to get the head of a specific player.
+    Item: head:auto
+    
+    # Text that the player sees when mouse is over item.
+    lore:
+      - "&fWelcome, {player}!"
+      - "&fYou currently have"
+      - "&2{playerpoints} &a&lPoints."
+    
+
+# -------------------------------------------------------
+# Messages
+# -------------------------------------------------------
+
+LackPoints: # Send this message to player when they lack points.
+  Message:
+    - "&aYou have insufficant funds to purchase this product." 
+    - "&aCollect &2&l{neededpoints} &amore points to continue."

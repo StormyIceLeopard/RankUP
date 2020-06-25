@@ -1,0 +1,21 @@
+For the RankUP Plugin:
+-MySQL Connection (RankUPsqlManager)
+-RankUP GUI shop (New Class)
+-Command to open GUI shop (CommandRankStore)
+
+
+What the RankUP Shop GUI needs:
+
+-Show what you can afford
+-Possibly Categories
+
+
+
+
+
+For the config.yml file:
+
+
+
+Possible Features later:
+-Shop can be stored in a DataBase or separate .yml file instead of config.yml.

@@ -1,0 +1,9 @@
+name: RankUpPlugin
+main: net.blizzardcraft.RankUP.RankUP
+version: 0.14
+description: Give points to players as long as they are online.
+commands:
+   RankStore:
+      description: Open the RankStore GUI Shop
+      usage: /RankStore
+   
